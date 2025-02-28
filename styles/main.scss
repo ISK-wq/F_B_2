@@ -1,0 +1,42 @@
+@use './varivables';
+@use './fonts';
+
+
+
+
+.button {
+    background-color: var(--color-light);
+    border: var(--border);
+    transition: background-color 100ms ease-out;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &:hover{
+        transition: background-color 100ms ease-in;
+        background-color: var(--color-accent);
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.some {
+    &__list {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+        flex-wrap: wrap;
+    }
+}
+
+.card {
+    &__button {
+        &:hover{
+            background-color: rgba(29, 244, 219, 0.586);;
+        }
+    }
+}
